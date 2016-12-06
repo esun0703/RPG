@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fairy Tail RPG</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/style/bootstrap.css" media="screen" title="no title">
+    <link rel="stylesheet" href="assets/style/style.css" media="screen" title="no title">
+    <link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!--Beginning of Header-->
+	<div class="header">
+    	<div class="container-fluid">
+			<!--Beginning of Nav Bar-->
+    		<div class="row">
+        		<div class="col-xs-8 centered">
+        			<img src="assets/images/fairytaillogo.png">
+					<button class="btn btn-primary" id="startButton">Start New Game</button>
+					<button class="btn btn-primary" id="restartButton">Restart</button>
+					<button class="btn btn-primary" id="playButton">Play Battle Music</button>
+					<button class="btn btn-primary" id="pauseButton">Pause Music</button>
+				</div>
+			</div>
+			<!--End of Nav Bar-->
+        </div>
+    </div>
+    <!--End of Header-->
+
+    <!--Beginning of Instructions-->
+    <section id="game board"></section>
+    	<div class="container-fluid">
+    		<!--Beginning of Instructions-->
+   		    <div class="alert alert-dismissible alert-danger" id="instructions">
+	  			<button type="button" class="close" data-dismiss="alert">&times;</button>
+	  			<strong>Instructions to play:</strong> 
+	  			<p>1. Select your character to bring to battle.</p>
+				<p>2. Pick your first opponent.</p>
+				<p>3. Click on 'Attack' to attack your opponent.</p>
+				<p>	  * This decreases your opponents HP and will also decrease yours depending on their attack. </p>
+				<p>	  * When your opponent blocks, it will lower your HP depending on your attack.</p>
+				<p>	  * When both characters block, nothing will happen.</p>
+				<p>4. When you've defeated your opponent, you will select another opponent to battle.</p>
+				<p>The goal of the game is to defeat all your opponents! Click <strong>'Start New Game'</strong> to begin.</p>
+				<p>GOOD LUCK!!!</p>
+			</div>
+			<!--End of Instructions-->
+			<div class="container sectionDiv">
+				<h3>Choose Your Character</h3>
+				<div class="chooseCharacter"></div>
+			
+				<h3>Your Character</h3>
+				<div class="chooseCharacter"></div>
+		
+				<h3>Attack</h3>
+				<div class="chooseCharacter"></div>
+			
+				<h3>Your Opponent</h3>
+				<div class="chooseCharacter"></div>
+			</div>
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script type = "text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
